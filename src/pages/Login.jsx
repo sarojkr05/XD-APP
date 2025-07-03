@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [formData, setFormData] = useState({ email: "Marry@Gmail.com", password: "Marry123" });
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -36,7 +36,7 @@ const Login = () => {
             <input
               type="email"
               name="email"
-              placeholder="Enter email address"
+              placeholder="Marry@Gmail.com"
               value={formData.email}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-lg p-3 text-sm"
@@ -51,7 +51,7 @@ const Login = () => {
             <input
               type="password"
               name="password"
-              placeholder="Enter password"
+              placeholder="Marry123"
               value={formData.password}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-lg p-3 text-sm"

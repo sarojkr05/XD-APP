@@ -4,11 +4,11 @@ import { Link, useNavigate } from "react-router-dom";
 const CreateAccount = () => {
     const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    fullName: "",
-    phone: "",
-    email: "",
-    password: "",
-    company: "",
+    fullName: "Marry Doe",
+    phone: "000000000",
+    email: "Marry@Gmail.com",
+    password: "Marry123",
+    company: "ABC",
   });
 
   const handleChange = (e) => {
@@ -37,7 +37,7 @@ const CreateAccount = () => {
           name="fullName"
           value={formData.fullName}
           onChange={handleChange}
-          placeholder="Full Name"
+          placeholder="Marry Doe"
           required
           className="border border-gray-300 rounded-lg p-3 text-sm"
         />
@@ -47,7 +47,7 @@ const CreateAccount = () => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="Phone Number"
+          placeholder="0000000000"
           required
           className="border border-gray-300 rounded-lg p-3 text-sm"
         />
@@ -57,7 +57,7 @@ const CreateAccount = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Email Address"
+          placeholder="Marry@Gmail.com"
           required
           className="border border-gray-300 rounded-lg p-3 text-sm"
         />
@@ -67,7 +67,7 @@ const CreateAccount = () => {
           name="password"
           value={formData.password}
           onChange={handleChange}
-          placeholder="Password"
+          placeholder="Marry123"
           required
           className="border border-gray-300 rounded-lg p-3 text-sm"
         />
@@ -77,7 +77,7 @@ const CreateAccount = () => {
           name="company"
           value={formData.company}
           onChange={handleChange}
-          placeholder="Company Name (optional)"
+          placeholder="ABC"
           className="border border-gray-300 rounded-lg p-3 text-sm"
         />
 
